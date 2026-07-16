@@ -18,6 +18,7 @@ This architecture splits the ingestion pipeline into two highly specialized pass
 1. **Pass 1 (Stateless SLM Extraction):** The local SLM acts strictly as a raw, stateless key-value parser. It evaluates each page in absolute isolation, extracting only visible, literal facts. If a field is missing, it returns `null`. It carries zero state and does no boundary reasoning.
 2. **Pass 2 (Stateful Rust Assembly):** A deterministic Rust state machine loops through the sequential page-level metadata. It evaluates temporal shifts, detects structural template headers, and dynamically clusters pages into discrete logical "Encounters," merging sparse/missing metadata forward.
 
+```text
 PASS 1: STATELESS EXTRACTION
                    ┌──────────────────────────────────┐
                    │       Page 1 OCR Text            │
@@ -53,7 +54,7 @@ PASS 1: STATELESS EXTRACTION
                    │   [Pages 1-4], [Pages 5-8]       │
                    └──────────────────────────────────┘
 
----
+```
 
 ## 🛠️ Key Architectural Features
 
