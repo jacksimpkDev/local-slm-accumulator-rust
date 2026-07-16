@@ -1,0 +1,1 @@
+C:\Users\jacks\AIDev-lab_local\local-slm-accumulator-rust\target\debug\local-slm-accumulator-rust.exe: C:\Users\jacks\AIDev-lab_local\local-slm-accumulator-rust\src\accumulator.rs C:\Users\jacks\AIDev-lab_local\local-slm-accumulator-rust\src\bates.rs C:\Users\jacks\AIDev-lab_local\local-slm-accumulator-rust\src\main.rs
