@@ -96,7 +96,7 @@ cargo run
 
 # Execute the deterministic integration and unit tests
 cargo test
-
+```
 ## Simulation Output Guide
 
 When executing `cargo run`, the program coordinates through four distinct operational phases:
